@@ -24,13 +24,13 @@ use Rebilly\Rest\Entity;
  *   "result"
  *   "amount"
  *   "currency"
- *   "parentTransaction"
+ *   "parentTransactionId"
  *   "rebillNumber"
  *   "processorAccount"
  *   "processorResponse"
  *   "websiteId"
  *   "customerId"
- *   "paymentCard"
+ *   "paymentCardId"
  *   "payment"
  * }
  * ```
@@ -87,7 +87,7 @@ final class Transaction extends Entity
      */
     public function getParentTransactionId()
     {
-        return $this->getAttribute('parentTransaction');
+        return $this->getAttribute('parentTransactionId');
     }
 
     /**
@@ -135,7 +135,7 @@ final class Transaction extends Entity
      */
     public function getPaymentCardId()
     {
-        return $this->getAttribute('paymentCard');
+        return $this->getAttribute('paymentCardId');
     }
 
     /**
