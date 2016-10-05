@@ -109,6 +109,14 @@ final class Transaction extends Entity
     /**
      * @return string
      */
+    public function getGatewayAccountId()
+    {
+        return $this->getAttribute('gatewayAccountId');
+    }
+
+    /**
+     * @return string
+     */
     public function getProcessorResponse()
     {
         return $this->getAttribute('processorResponse');
