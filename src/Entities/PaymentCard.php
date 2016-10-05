@@ -23,16 +23,13 @@ use Rebilly\Rest\Entity;
  *   "expMonth": "07",
  *   "status": "active",
  *   "brand": "Visa",
- *   "customer": "ABCD1234",
- *   "billingContact": "ADDRESS1",
+ *   "customerId": "ABCD1234",
+ *   "billingContactId": "ADDRESS1",
  *   "createdTime": "2015-02-11 04:45:23",
  *   "updatedTime": "2015-02-11 04:45:23"
  *   "customFields": []
  * }
  * ```
- *
- * @todo Rename property `customer` to `customerId`
- * @todo Rename property `billingContact` to `billingContactId`
  *
  * @author Veaceslav Medvedev <veaceslav.medvedev@rebilly.com>
  * @version 0.1
@@ -132,7 +129,7 @@ final class PaymentCard extends Entity
      */
     public function getBillingContactId()
     {
-        return $this->getAttribute('billingContact');
+        return $this->getAttribute('billingContactId');
     }
 
     /**
@@ -142,7 +139,7 @@ final class PaymentCard extends Entity
      */
     public function setBillingContactId($value)
     {
-        return $this->setAttribute('billingContact', $value);
+        return $this->setAttribute('billingContactId', $value);
     }
 
     /**

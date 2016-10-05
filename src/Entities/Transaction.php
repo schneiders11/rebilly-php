@@ -28,8 +28,8 @@ use Rebilly\Rest\Entity;
  *   "rebillNumber"
  *   "processorAccount"
  *   "processorResponse"
- *   "website"
- *   "customer"
+ *   "websiteId"
+ *   "customerId"
  *   "paymentCard"
  *   "payment"
  * }
@@ -119,7 +119,7 @@ final class Transaction extends Entity
      */
     public function getWebsiteId()
     {
-        return $this->getAttribute('website');
+        return $this->getAttribute('websiteId');
     }
 
     /**
@@ -127,7 +127,7 @@ final class Transaction extends Entity
      */
     public function getCustomerId()
     {
-        return $this->getAttribute('customer');
+        return $this->getAttribute('customerId');
     }
 
     /**

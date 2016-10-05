@@ -18,7 +18,7 @@ use Rebilly\Rest\Entity;
  * ```json
  * {
  *   "id",
- *   "customer",
+ *   "customerId",
  *   "firstName"
  *   "lastName"
  *   "organization"
@@ -35,8 +35,6 @@ use Rebilly\Rest\Entity;
  * }
  * ```
  *
- * @todo Rename property `customer` to `customerId`
- *
  * @author Veaceslav Medvedev <veaceslav.medvedev@rebilly.com>
  * @version 0.1
  */
@@ -47,7 +45,7 @@ final class Contact extends Entity
      */
     public function getCustomerId()
     {
-        return $this->getAttribute('customer');
+        return $this->getAttribute('customerId');
     }
 
     /**
@@ -57,7 +55,7 @@ final class Contact extends Entity
      */
     public function setCustomerId($value)
     {
-        return $this->setAttribute('customer', $value);
+        return $this->setAttribute('customerId', $value);
     }
 
     /**

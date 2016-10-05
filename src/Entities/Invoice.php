@@ -17,17 +17,15 @@ use Rebilly\Rest\Entity;
  *
  * ```json
  * {
- *   "customer"
- *   "website"
+ *   "customerId"
+ *   "websiteId"
  *   "currency"
  *   "dueTime"
- *   "billingContact"
- *   "deliveryContact"
+ *   "billingContactId"
+ *   "deliveryContactId"
  * }
  * ```
  *
- * @todo Rename property `billingContact` to `billingContactId`
- * @todo Rename property `deliveryContact` to `deliveryContactId`
  */
 final class Invoice extends Entity
 {
@@ -36,7 +34,7 @@ final class Invoice extends Entity
      */
     public function getCustomerId()
     {
-        return $this->getAttribute('customer');
+        return $this->getAttribute('customerId');
     }
 
     /**
@@ -46,7 +44,7 @@ final class Invoice extends Entity
      */
     public function setCustomerId($value)
     {
-        return $this->setAttribute('customer', $value);
+        return $this->setAttribute('customerId', $value);
     }
 
     /**
@@ -54,7 +52,7 @@ final class Invoice extends Entity
      */
     public function getWebsiteId()
     {
-        return $this->getAttribute('website');
+        return $this->getAttribute('websiteId');
     }
 
     /**
@@ -72,7 +70,7 @@ final class Invoice extends Entity
      */
     public function setWebsiteId($value)
     {
-        return $this->setAttribute('website', $value);
+        return $this->setAttribute('websiteId', $value);
     }
 
     /**
@@ -116,7 +114,7 @@ final class Invoice extends Entity
      */
     public function getBillingContactId()
     {
-        return $this->getAttribute('billingContact');
+        return $this->getAttribute('billingContactId');
     }
 
     /**
@@ -126,7 +124,7 @@ final class Invoice extends Entity
      */
     public function setBillingContactId($value)
     {
-        return $this->setAttribute('billingContact', $value);
+        return $this->setAttribute('billingContactId', $value);
     }
 
     /**
@@ -134,7 +132,7 @@ final class Invoice extends Entity
      */
     public function getDeliveryContactId()
     {
-        return $this->getAttribute('deliveryContact');
+        return $this->getAttribute('deliveryContactId');
     }
 
     /**
@@ -144,6 +142,6 @@ final class Invoice extends Entity
      */
     public function setDeliveryContactId($value)
     {
-        return $this->setAttribute('deliveryContact', $value);
+        return $this->setAttribute('deliveryContactId', $value);
     }
 }
